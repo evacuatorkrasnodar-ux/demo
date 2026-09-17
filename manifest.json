@@ -1,0 +1,22 @@
+{
+  "name": "Сайты — от 1000 ₽",
+  "short_name": "Сайты1000",
+  "start_url": "/sites-900/index.html",
+  "scope": "/sites-900/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111111",
+  "description": "Создание мини‑сайтов от 1000 ₽. Скидка 10% через Авито. Чистый код, адаптив, PWA.",
+  "icons": [
+    {
+      "src": "/sites-900/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/sites-900/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
