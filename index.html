@@ -5,63 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Создание сайтов — от 1000 ₽ | Скидка 10 % через Авито</title>
 
-  <!-- SEO -->
   <meta name="description" content="Создание мини‑сайтов от 1000 ₽. Скидка 10 % при заказе через Авито. Чистый код, премиум‑дизайн, адаптив, PWA, домен и хостинг бесплатно.">
   <meta name="keywords" content="создание сайтов, сайт за 1000 рублей, мини сайт, лендинг, разработка сайтов, Краснодар, услуги, эвакуатор сайт, сайт мастера, сайт услуги">
   <link rel="canonical" href="https://evacuatorkrasnodar-ux.github.io/demo/">
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Создание сайтов — от 1000 ₽ | Скидка 10 % через Авито">
   <meta property="og:description" content="Мини‑лендинги через чистый код. Быстро, аккуратно, без шаблонов.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://evacuatorkrasnodar-ux.github.io/demo/">
 
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "LocalBusiness",
-        "name": "Создание сайтов — от 1000 ₽",
-        "description": "Мини‑лендинги под ключ через чистый код. Скидка 10 % при заказе через Авито.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Краснодар",
-          "addressCountry": "RU"
-        },
-        "telephone": "+7-999-636-22-02",
-        "email": "79996362202@ya.ru",
-        "priceRange": "1000 RUB",
-        "url": "https://evacuatorkrasnodar-ux.github.io/demo/",
-        "sameAs": [
-          "https://t.me/+79996362202",
-          "https://wa.me/79996362202",
-          "https://vk.com"
-        ]
-      },
-      {
-        "@type": "Service",
-        "name": "Создание мини‑сайтов",
-        "serviceType": "Разработка лендингов",
-        "provider": { "@type": "LocalBusiness", "name": "Roman" },
-        "areaServed": "Краснодар",
-        "offers": { "@type": "Offer", "price": "1000", "priceCurrency": "RUB" }
-      }
-    ]
-  }
-  </script>
-
-  <!-- Шрифт и стили -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/demo/style.css">
-
-  <!-- PWA -->
-  <link rel="manifest" href="/demo/manifest.json">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="manifest" href="/manifest.json">
 </head>
 
 <body>
-  <!-- Скрытый SEO-блок -->
   <div class="seo-hidden">
     создание сайтов от 1000 рублей мини сайт лендинг заказать сайт дешево разработка сайта Краснодар услуги сайт мастера сайт эвакуатора сайт услуги pwa сайт премиум дизайн чистый код html css js
   </div>
@@ -71,35 +29,55 @@
   <header>
     <h1>Создание сайтов через код — от 1000 ₽</h1>
     <p>Мини‑лендинги под ключ. Чистый фронтенд, аккуратный дизайн, без шаблонов.</p>
-    <a href="/demo/order.html" class="btn">Заказать сайт</a>
+    <a href="/order.html" class="btn">Заказать сайт</a>
     <p style="margin-top:10px;color:#d4af37;font-weight:600;">
       Скидка 10 % при заказе через Авито — сайт всего 900 ₽
     </p>
   </header>
 
-  <!-- Остальные секции остаются без изменений -->
+  <section id="why">
+    <h2>Почему от 1000 ₽?</h2>
+    <div class="cards">
+      <div class="card"><h3>Без шаблонов</h3><p>Каждый сайт пишется вручную — чистый HTML, CSS, JS.</p></div>
+      <div class="card"><h3>Максимальная скорость</h3><p>Сайт грузится мгновенно благодаря чистому коду.</p></div>
+      <div class="card"><h3>Современный дизайн</h3><p>Премиум‑стиль как у студий.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Контакты</h2>
+    <p>Связаться со мной:</p>
+    <div class="contact-buttons">
+      <a href="tel:+79996362202" class="btn contact-btn">Позвонить</a>
+      <a href="mailto:79996362202@ya.ru" class="btn contact-btn">Почта</a>
+      <a href="https://t.me/+79996362202" class="btn contact-btn">Telegram</a>
+      <a href="https://wa.me/79996362202" class="btn contact-btn">WhatsApp</a>
+      <a href="https://vk.com" class="btn contact-btn">ВКонтакте</a>
+      <a href="https://www.avito.ru" class="btn contact-btn">Авито</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>© 2026 Создание сайтов — Roman</p>
+    </div>
+  </footer>
 
   <script>
     const sections = document.querySelectorAll('section');
-    const options = { threshold: 0.2 };
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('visible');
       });
-    }, options);
-
+    }, { threshold: 0.2 });
     sections.forEach(section => observer.observe(section));
   </script>
 
-  <!-- Регистрация service worker -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/demo/sw.js')
-          .catch((err) => console.log('SW error', err));
+        navigator.serviceWorker.register('/sw.js')
+          .catch(err => console.log('SW error', err));
       });
     }
   </script>
